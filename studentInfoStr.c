@@ -2,7 +2,7 @@
 #include<string.h>
 
 struct StudentInfo{ 
-        char rollno[6];
+        char rollno[9];
         char name[30];
         char mobileno[15];
         char email[40];
@@ -18,6 +18,7 @@ void print(struct StudentInfo si){
     }
 int main()
 {
+    printf("Size of struct StudentInfo is %zu bytes\n",sizeof(struct StudentInfo));
     int n;
     printf("How many student details you want to enter:\n");
     scanf("%d",&n);
