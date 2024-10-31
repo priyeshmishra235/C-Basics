@@ -2,28 +2,29 @@
 
 int main()
 {
-    int N,R=0,S;
+    //getting input N, R is reverse,
+    int originalNum,reverNum=0,remStore;
 
-    printf("enter the number to find if it's palindrome");
-    scanf("%d",&N);
+    printf("enter the number to find if \nit's palindrome or not\n\n");
+    scanf("%d",&originalNum);
 
-    int original=N;
+    int OldoriginalNum=originalNum;
 
-    while(N>0)
+    while(originalNum>0)
     {
-      S=N%10;
-      R=R*10 + S;
-      N=N/10;
+      remStore=originalNum%10;
+      reverNum=reverNum*10 + remStore;
+      originalNum=originalNum/10;
     }
 
-    if(R==original)
+    if(reverNum==OldoriginalNum)
     {
-        printf("the palindrome number is palindrome");
+        printf("\nthe palindrome number is palindrome\n");
 
     }
     else
     {
-        printf("the number is not a palindrome");
+        printf("\nthe number is not a palindrome\n");
     }
 
     return 0;

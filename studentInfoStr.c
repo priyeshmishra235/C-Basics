@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
+//declaring a struct to store similar information of students
 struct StudentInfo{ 
         char rollno[9];
         char name[30];
@@ -9,6 +10,7 @@ struct StudentInfo{
         float marks;
     };
 
+//function to print info of students
 void print(struct StudentInfo si){
     printf("Name of the student:%s\n",si.name);
     printf("Roll no of the student:%s\n",si.rollno);
@@ -16,14 +18,17 @@ void print(struct StudentInfo si){
     printf("Mobile no of the student:%s\n",si.mobileno);
     printf("Email of the student:%s\n",si.email);
     }
+
 int main()
 {
-    printf("Size of struct StudentInfo is %zu bytes\n",sizeof(struct StudentInfo));
-    int n;
+    // to get how much storage StudentInfo is taking
+    printf("Size of struct StudentInfo is %zu bytes\n",sizeof(struct StudentInfo)); 
+    
+    int n; //n=no. of student details to fill
     printf("How many student details you want to enter:\n");
-    scanf("%d",&n);
-    struct StudentInfo si[n];
-    //getting details of students
+    scanf("%d",&n); //getting input
+    struct StudentInfo si[n]; //declaring studentinfo as si[n] to n length array of name si
+    //getting details of students as input
      for (int i=0;i<n;i++){
         printf("Enter details of student %d:\n",i+1);
         printf("enter roll no\n");
@@ -39,7 +44,9 @@ int main()
         printf("\n");
     }
 
-condition:
+condition: //using goto statement here to get infinte loop asing these
+
+//asing user to input a choice number to show from following
 printf("How do you want to view details of the students:\n"
        "Enter your choice\n"
        "1.To view all student details\n"
@@ -48,8 +55,9 @@ printf("How do you want to view details of the students:\n"
        "4.Average of marks of all students\n"
        "5.Show details of student with lowest marks\n");
 printf("\n");
-int choice;
-scanf("%d",&choice);
+int choice; 
+scanf("%d",&choice); //storing choice number
+//using switch for outputting specific condition
 switch (choice){
     case 1:
         //function to print details of all the students 
@@ -112,7 +120,7 @@ switch (choice){
         break;
 }
 printf("\n\n");
-goto condition;
+goto condition; //using goto to get infing loop of asking user to enter a choice
 
 return 0;
 }
