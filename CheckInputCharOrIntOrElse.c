@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int CheckInputCharOrIntOrElse()
 {
     //declaring variable and getting input
     char ch;

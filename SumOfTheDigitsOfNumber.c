@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int SumOfTheDigitsOfNumber()
 {
     //declaring number , remainder and sum of its digits
     int num,rem,sum=0;

@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int SwapTwoNum()
 {
     //delaring num1 , num2 and temporary variable
     int a , b , temp;

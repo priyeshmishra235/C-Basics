@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int StarPatterns()
 {
 //Taking Input
     int n,i,j;

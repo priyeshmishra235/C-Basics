@@ -4,7 +4,7 @@
 unsigned long long int i,n=0,f=0;
 unsigned long long int fac(int n);
 
-int main()
+int FactorialFind()
 {
     printf("enter the number you want factorial of:");
     scanf("%llu",&n);

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int Palindrome()
 {
     //getting input N, R is reverse,
     int originalNum,reverNum=0,remStore;

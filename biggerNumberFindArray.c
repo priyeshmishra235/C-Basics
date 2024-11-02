@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int biggerNumberFindArray()
 {
     //getting input from user for the size of the array
     int size,bigNum=0;

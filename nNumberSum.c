@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+int nNumberSum()
 {
     //getting input from the user in "a"
     int a,n,sum;

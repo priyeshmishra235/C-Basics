@@ -19,7 +19,7 @@ void print(struct StudentInfo si){
     printf("Email of the student:%s\n",si.email);
     }
 
-int main()
+int studentInfoStr()
 {
     // to get how much storage StudentInfo is taking
     printf("Size of struct StudentInfo is %zu bytes\n",sizeof(struct StudentInfo)); 

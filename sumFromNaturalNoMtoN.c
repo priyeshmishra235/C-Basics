@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int sumFromNaturalNoMtoN()
 {
     //getting input for initial and final digit
     int initialDigit,finalDig,sum=0;

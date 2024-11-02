@@ -1,8 +1,9 @@
 #include<stdio.h>
 
-int main()
+int twoNumSumFind()
 {
     //declating two variables
+    printf("Enter two numbers you want to find sum of\n");
     int a;
     int b;
     printf("enter a ");

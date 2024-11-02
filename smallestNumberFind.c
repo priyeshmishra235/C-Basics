@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int smallestNumberFind()
 {
     //getting input from user for the size of the array
     int size,small=999999999;//putting small as very large so that any number will be smaller than this
