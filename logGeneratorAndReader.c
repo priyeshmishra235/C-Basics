@@ -11,9 +11,18 @@ int logGeneratorAndReader()
 
     // asking user which mode they want to open file in
     char mode[2]; // declaring mode array with 3 indices to store "r","w","a",etc.
-    printf("Enter the mode you want to open the file in :\n");
+    printf("Enter the mode you want to open the file in (enter 'x' for exiting program):\n");
     scanf("%s", mode);
 
+
+    if (mode[0] == 'x')//to exit the code loop
+    {
+        goto overProgram;
+        break;
+    }
+
+    else
+    {
     // opening file in required format and storing in logFile pointer
     logFile = fopen("log.txt", mode);
 
@@ -22,9 +31,10 @@ int logGeneratorAndReader()
     {
         printf("Error opening the file\n");
         printf("Input NOT defined."
-               "\nOnly a(for append), r(for read), w(for write)"
+               "\nOnly a(for append), r(for read), w(for write) , x(for exiting program)"
                "\nis accepted and valid input.");
         return 1; // end the program here
+        break;
     }
 
     if (mode[0] == 'r') // reading the file contents upto 1000 characters
@@ -49,7 +59,9 @@ int logGeneratorAndReader()
         }
         printf("\n");
         fclose(logFile);
+        break;
     }
+
     else if (mode[0] == 'w') // writing the file contents upto 1000 characters
     {
         char *inputStr = (char *)malloc(1001 * sizeof(char)); // dynamicaly storing string and freeing memory
@@ -67,7 +79,9 @@ int logGeneratorAndReader()
 
         free(inputStr);
         fclose(logFile);
+        break;
     }
+
     else if (mode[0] == 'a') // appending the file contents upto 1000 characters
     {
         char *inputStr = (char *)malloc(1001 * sizeof(char));
@@ -85,14 +99,28 @@ int logGeneratorAndReader()
         free(inputStr);
         fclose(logFile);
     }
+
+    else if (mode[0] == 'x')//to exit the code loop
+    {
+        goto overProgram;
+        break;
+    }
+
     else
     { // input not defined
         printf("Input NOT defined."
-               "\nOnly a(for append), r(for read), w(for write)"
+               "\nOnly a(for append), r(for read), w(for write) ,x(for exiting program)"
                "\nis accepted and valid input.");
         printf("\n");
+        break;
+    }
+
+
     }
 
    }
+
+    overProgram:
+
     return 0;
 }
