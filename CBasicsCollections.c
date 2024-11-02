@@ -13,7 +13,7 @@
 #include "SumOfTheDigitsOfNumber.c"
 #include "SwapTwoNum.c"
 #include "twoNumSumFind.c"
-
+#include "NumInBig.c"
 
 
 int main()
@@ -34,7 +34,8 @@ int main()
             "10.Finding factorial of number input by the user\n"
             "11.Print different star Patterns of any height desired by the user\n"
             "12.Entering Student Information in the record and getting required details\n"
-            "13.Using this you can generate any text file , read , append , or write in the file\n"
+            "13.Using this choice you can generate any text file , read , append , or write in the file\n"
+            "14.Print the Numbers whatever user types in big using * symbol\n"
             "--------------------------------------------\n\n");
 
     while(1)
@@ -121,6 +122,12 @@ int main()
             {
                  logGeneratorAndReader();
                  printf("\n--------------------------------------------\n");
+                break;
+            }
+            case 14:
+            {
+                 NumInBig();
+                printf("\n--------------------------------------------\n");
                 break;
             }
             default:
