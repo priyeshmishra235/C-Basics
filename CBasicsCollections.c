@@ -14,7 +14,7 @@
 #include "SwapTwoNum.c"
 #include "twoNumSumFind.c"
 #include "NumInBig.c"
-
+#include "Hangman.c"
 
 int main()
 {
@@ -36,6 +36,8 @@ int main()
             "12.Entering Student Information in the record and getting required details\n"
             "13.Using this choice you can generate any text file , read , append , or write in the file\n"
             "14.Print the Numbers whatever user types in big using * symbol\n"
+            "15.Hangman Game\n\n"
+            "Info- when the selected choice program will end, then only you will be able to select other choice\n"
             "--------------------------------------------\n\n");
 
     while(1)
@@ -127,6 +129,12 @@ int main()
             case 14:
             {
                  NumInBig();
+                printf("\n--------------------------------------------\n");
+                break;
+            }
+            case 15:
+            {
+                 hangman();
                 printf("\n--------------------------------------------\n");
                 break;
             }

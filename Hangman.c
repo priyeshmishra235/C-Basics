@@ -7,7 +7,7 @@
 #define MAX_TRIES 6
 
 //declaring Functions
-void printHangman(tries); //independent
+void printHangman(int tries); //independent
 void tries(); //independent
    
 
@@ -97,12 +97,12 @@ void VsComputer()
     int len =(int)strlen(wordInput);
 }
 
-int main()
+int hangman()
 {
-    //system("cls");
+    system("cls");
     char choice;
     printf("\t------------Hangman Game------------\n\n"
-           "Modes Available: 1.Vs Computer\n"
+           "Modes Available: 1.Vs Computer (Not Working. Will by Updated soon!)\n"
                     "\t\t 2.Player 1 Vs Player 2\n"
                     "\t\t 3.What is Hangman Game?");
     
