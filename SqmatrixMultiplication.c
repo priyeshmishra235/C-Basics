@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main()
+int SqmatrixMultiplication()
 {
     //declaring variables
     int a[10][10],b[10][10],mul[10][10],i,j,k,order;
 
 
-    system("cls");
+    //system("cls");
     //getting input from the user for the number of rows and columns
     printf("Order of the matix: ");
     scanf("%d",&order);

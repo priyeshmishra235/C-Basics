@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int guassianElimination()
 {
     //displaying the system of equation before getting input
     printf("----------System Of Linear Equations----------\n\n"

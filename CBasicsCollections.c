@@ -15,10 +15,14 @@
 #include "twoNumSumFind.c"
 #include "NumInBig.c"
 #include "Hangman.c"
+#include "anyTwoMatrixMulti.c"
+#include "determinant.c"
+#include "guassianElimination.c"
+#include "SqmatrixMultiplication.c"
 
 int main()
 {
-    
+    system("cls");
     int choice;
     printf("\n----------------------------CHOICES-----------------------------\n");
     printf( "Select the Program you want to run:\n"
@@ -36,7 +40,11 @@ int main()
             "12.Entering Student Information in the record and getting required details\n"
             "13.Using this choice you can generate any text file , read , append , or write in the file\n"
             "14.Print the Numbers whatever user types in big using * symbol\n"
-            "15.Hangman Game\n\n"
+            "15.Hangman Game\n"
+            "16.Finding multiplication of any two mXn and pXq order matrices\n"
+            "17.Finding Determinant of any n order matrices(not working. will be patched soon)\n"
+            "18.Finding solution of System of Linear equations(does NOT work for infinite or inconsistent solutions)\n"
+            "19.Square Matrix Multiplication\n\n"
             "Info- when the selected choice program will end, then only you will be able to select other choice\n"
             "--------------------------------------------\n\n");
 
@@ -135,6 +143,30 @@ int main()
             case 15:
             {
                  hangman();
+                printf("\n--------------------------------------------\n");
+                break;
+            }
+            case 16:
+            {
+                 anyTwoMatrixMulti();
+                printf("\n--------------------------------------------\n");
+                break;
+            }
+            case 17:
+            {
+                 determinant();
+                printf("\n--------------------------------------------\n");
+                break;
+            }
+            case 18:
+            {
+                 guassianElimination();
+                printf("\n--------------------------------------------\n");
+                break;
+            }
+            case 19:
+            {
+                 SqmatrixMultiplication();
                 printf("\n--------------------------------------------\n");
                 break;
             }

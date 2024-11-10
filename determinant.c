@@ -72,7 +72,7 @@ void display(int mat[order][order],int row ,int col)
     }
 }
 
-int main()
+int determinant()
 {
     int mat[10][10],det2[2][2],order;
 

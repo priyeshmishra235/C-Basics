@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int anyTwoMatrixMulti()
 {
     //declaring variables
     int a[10][10],b[10][10],mul[10][10],i,j,k,rowA,colA,rowB,colB;
