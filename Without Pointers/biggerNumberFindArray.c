@@ -3,7 +3,7 @@
 int biggerNumberFindArray()
 {
     //getting input from user for the size of the array
-    int size,bigNum=0;
+    int size;
     printf("enter number for the size of the array\n");
     scanf("%d",&size);
     int num[size];
@@ -27,13 +27,13 @@ int biggerNumberFindArray()
     //now comparing numbers to get greatest number between them
     for(int i=0;i<size;i++)
     {
-        if(bigNum<num[i])
+        if(num[0]<num[i])
         {
-            bigNum=num[i];
+            num[0]=num[i];
         }
 
     }
-    printf("biggest number is %d",bigNum);
+    printf("biggest number is %d",num[0]);
 
     return 0;
 }

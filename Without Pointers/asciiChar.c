@@ -2,18 +2,20 @@
 
 int main(){
 
-    int n,i,j;
+    int n;
+    char ch='!';
     printf("what height patten you want?\n");
     scanf("%d",&n);
 
-    for(i=n;i>0;i--)
+   for (int i=0;i<n;i++)
+   {
+    for (int j=i+1;j<=n;j++)
     {
-        for(j=i;j<=n;j++)
-        {
-            printf("%c",j);
-        }
-        printf("\n");
+        printf("%c",ch);
+        ch++;
     }
+    printf("\n");
+   }
     
     return 0;
 }
