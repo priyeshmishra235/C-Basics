@@ -110,7 +110,7 @@ void printNumbers(char *input)
         printf("\n");
     }
 }
-int NumInBig() 
+int main() 
 {
     char NumInput[100];
     printf("Enter the number you want to print in big\n"); 

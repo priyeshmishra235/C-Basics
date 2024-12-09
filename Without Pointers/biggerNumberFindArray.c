@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int biggerNumberFindArray()
+//biggerNumberFindArray
+int main()
 {
     //getting input from user for the size of the array
     int size;
@@ -13,6 +13,11 @@ int biggerNumberFindArray()
     {
         printf("enter %dth place number to add to arrray\n",i+1);
         scanf("%d",&num[i]);
+    //now comparing numbers to get greatest number between them
+        if(num[0]<num[i])
+        {
+            num[0]=num[i];
+        }
     }
 
     //printing numbers entered in the array
@@ -21,18 +26,8 @@ int biggerNumberFindArray()
     {
         printf("[%d]\t",num[d]);
     }
-
-    printf("\n");
     
-    //now comparing numbers to get greatest number between them
-    for(int i=0;i<size;i++)
-    {
-        if(num[0]<num[i])
-        {
-            num[0]=num[i];
-        }
-
-    }
+    printf("\n");
     printf("biggest number is %d",num[0]);
 
     return 0;

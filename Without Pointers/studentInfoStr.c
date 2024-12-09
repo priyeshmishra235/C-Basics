@@ -3,20 +3,14 @@
 
 //declaring a struct to store similar information of students
 struct StudentInfo{ 
-        char rollno[9];
-        char name[30];
-        char mobileno[15];
-        char email[40];
+        char rollno[9],name[30],mobileno[15],email[40];
         float marks;
     };
 
 //function to print info of students
 void print(struct StudentInfo si){
-    printf("Name of the student:%s\n",si.name);
-    printf("Roll no of the student:%s\n",si.rollno);
-    printf("Marks of the student:%f\f",si.marks);
-    printf("Mobile no of the student:%s\n",si.mobileno);
-    printf("Email of the student:%s\n",si.email);
+    printf("Name: %s\nRoll no: %s\nMarks: %.2f\nMobile no: %s\nEmail: %s\n",
+            si.name,si.rollno,si.marks,si.mobileno,si.email);
     }
 
 int studentInfoStr()
@@ -29,19 +23,13 @@ int studentInfoStr()
     scanf("%d",&n); //getting input
     struct StudentInfo si[n]; //declaring studentinfo as si[n] to n length array of name si
     //getting details of students as input
-     for (int i=0;i<n;i++){
+     for (int i=0;i<n;i++,printf("\n")){
         printf("Enter details of student %d:\n",i+1);
-        printf("enter roll no\n");
-        scanf("%s",&si[i].rollno);
-        printf("enter name\n");
-        scanf("%s",&si[i].name);
-        printf("enter marks\n");
-        scanf("%f",&si[i].marks);
-        printf("enter mobile no\n");
-        scanf("%s",&si[i].mobileno);
-        printf("enter email\n");
-        scanf("%s",&si[i].email);
-        printf("\n");
+        printf("enter roll no\n"); scanf("%s",&si[i].rollno);
+        printf("enter name\n"); scanf("%s",&si[i].name);
+        printf("enter marks\n"); scanf("%f",&si[i].marks);
+        printf("enter mobile no\n"); scanf("%s",&si[i].mobileno);
+        printf("enter email\n"); scanf("%s",&si[i].email);
     }
 
 condition: //using goto statement here to get infinte loop asing these
@@ -54,7 +42,6 @@ printf("How do you want to view details of the students:\n"
        "3.Show details of student with highest marks\n"
        "4.Average of marks of all students\n"
        "5.Show details of student with lowest marks\n");
-printf("\n");
 int choice; 
 scanf("%d",&choice); //storing choice number
 //using switch for outputting specific condition

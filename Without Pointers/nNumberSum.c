@@ -13,5 +13,5 @@ int nNumberSum()
         sum=sum+n;
     }
     printf("sum of them is %d",sum);
-   return 0;
+    return 0;
 }
