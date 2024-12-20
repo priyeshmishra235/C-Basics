@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 // Function to shift elements to the right
-void shifting(int index, int arr[], int size,int num);
+void shifting(int index, int arr[], int size, int num);
 
-int main() {
+int main()
+{
     int size, index, num;
 
     // Input the size of the array
@@ -14,16 +15,16 @@ int main() {
     int arr[size + 1];
 
     // Input array elements
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         printf("Enter the %dth element: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
     // Input the position and validate it
     printf("At what index do you want to insert the element? ");
-    
-
-    if (scanf("%d", &index),index < 0 || index > size) {
+    if (scanf("%d", &index), index < 0 || index > size)
+    {
         printf("Invalid position! Please enter a position between 1 and %d.\n", size + 1);
         return 1;
     }
@@ -34,11 +35,11 @@ int main() {
 
     // Shift elements and insert the new element
     shifting(index, arr, size, num);
-    
 
     // Print the updated array
     printf("Updated array: ");
-    for (int i = 0; i < size + 1; i++) {
+    for (int i = 0; i < size + 1; i++)
+    {
         printf("%d ", arr[i]);
     }
     printf("\n");
@@ -47,8 +48,10 @@ int main() {
 }
 
 // Function to shift elements to the right
-void shifting(int index, int arr[], int size,int num) {
-    for (int i = size; i > index; i--) {
+void shifting(int index, int arr[], int size, int num)
+{
+    for (int i = size; i > index; i--)
+    {
         arr[i] = arr[i - 1];
     }
     arr[index] = num;
