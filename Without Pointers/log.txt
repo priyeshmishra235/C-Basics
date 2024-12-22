@@ -1,3 +1,1 @@
-i have made a log generator and reader. 
-i can make programs automatically write here about them and error they are producing.
-or create a new file and perform those actions in them.
+append this shit
