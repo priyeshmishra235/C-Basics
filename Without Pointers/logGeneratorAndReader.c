@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-// logGeneratorAndReader
-int main()
+
+int logGeneratorAndReader()
 {
     while (1) // infinite while loop
     {
