@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int logGeneratorAndReader()
+//logGeneratorAndReader
+int main()
 {
     while (1) // infinite while loop
     {
@@ -16,7 +16,7 @@ int logGeneratorAndReader()
                "\na (append), r (read), w (write), x (exit program):\n");
         scanf("%s", mode);
 
-        if (mode[0] == 'x') // to exit the code loop
+        if (mode[0] == 'x')
         {
             return 0;
         }
