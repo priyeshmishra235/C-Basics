@@ -6,7 +6,7 @@ int main()
     while(n>num)
     {
         int sum;
-        
-        
+
+
     }
 }

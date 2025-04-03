@@ -8,7 +8,7 @@ int main()
     printf("Enter the value of n: ");
     scanf("%d",&n);
     printf("%d",Ack(m,n));
-    
+
 }
 int Ack(int m,int n)
 {

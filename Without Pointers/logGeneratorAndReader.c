@@ -17,7 +17,7 @@ void read(char string[1001], int size, FILE *logFile) {
 void write(FILE *logFile) {
   char *inputStr = (char *)malloc(1001 * sizeof(char));
   printf("enter the text you want to add to the file\n");
-  // getchar() to remove any left over newline character for proper funtioning
+  // getchar() to remove any left over newline character for proper functioning
   // of fgets()
   getchar();
   fgets(inputStr, 1001, stdin);

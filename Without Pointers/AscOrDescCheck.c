@@ -9,7 +9,7 @@ int main()
         printf("Enter valid size of array! Terminating process");
         return 1;
     }
-        
+
     int arr[size];
     bool isAsc = 0, isDesc = 0;
 
@@ -25,7 +25,7 @@ int main()
     for (int i = 0; i < size - 1; i++)
     {
         if (arr[i] < arr[i + 1]) isAsc = 1;
-        else isDesc = 1; 
+        else isDesc = 1;
     }
 
     if (isAsc && isDesc)
